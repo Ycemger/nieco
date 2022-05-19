@@ -36,7 +36,8 @@
     top: 100%;
     left: 55%;
     margin-top: var(--bs-dropdown-spacer);
-    background-color: lightgray;
+    background: rgb(0,1,0);
+    background: linear-gradient(90deg, rgba(0,1,0,1) 0%, rgba(9,204,80,0.6334908963585435) 25%, rgba(0,219,255,1) 100%);
 }
 .dropdown-item{
     padding-left: 20%;
@@ -74,4 +75,40 @@
     height: 310px;
     width: 361px;
     margin-left: 55%;
+}
+#obrazokKamzik{
+    justify-content: center;
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 7%;
+
+}
+#mapa{
+    margin-top: 10%;
+    
+}
+body{
+    background-color: #F5F5F5;
+}
+#ZeleznaStudnicka{
+    justify-content: center;
+    display: flex;  
+}
+#obzels{
+    max-width: 100%;
+    max-height: 75%;
+    position: relative;
+    top: 10%;
+    margin-left: 15%;
+}
+#DevinskaKobyla{
+    justify-content: center;
+    display: flex;
+    padding-left: 13%;
+}
+.kobyla{
+    padding-top: 15%;
+    width: 1200%;
+    height: 80%;
 }
