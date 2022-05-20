@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cyklistika</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="..\css\stylenavbar.css">
+    <link rel="stylesheet" href="..\css\stylebodymain.css">
+  </head>
+  <body>
+
+    <nav role="navigation">
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+        
+        <!--
+        Some spans to act as a hamburger.
+        
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+          <a href="../html/index1.html"><li>Home</li></a>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Info</li></a>
+          <a href="#"><li>Contact</li></a>
+          <a href="#" target="_blank"><li>Show me more</li></a> 
+        </ul>
+      </div>
+      
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+      </form>
+    </nav>
+
+    <main>
+      <header>
+        <div class="left">
+        <h1>THIS IS THE WORLD WE LOVE</h1></div>
+        <div class="right"><img src="https://hemsedal.com/imager/images/Sommeraktivitet/Utend%C3%B8rs/Sykkel/2237/C94A5893_e7516ba00c88efaa24219bb445deb32e.jpg" alt="Old Technology"></div>
+      </header>
+      
+      <div class="card-container">
+        <div class="card">
+          <div id="pohybobr" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#pohybobr" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#pohybobr" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#pohybobr" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://th.bing.com/th/id/OIP.8F1RrdkLKOOBd5qMxDvJkAHaE8?pid=ImgDet&rs=1" id="obr" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://th.bing.com/th/id/OIP.8F1RrdkLKOOBd5qMxDvJkAHaE8?pid=ImgDet&rs=1" id="obr" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://th.bing.com/th/id/OIP.8F1RrdkLKOOBd5qMxDvJkAHaE8?pid=ImgDet&rs=1" id="obr" class="d-block w-100" alt="...">
+                <p>nieco</p>
+              </div>
+            </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#pohybobr" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#pohybobr" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- <div class="card-container">
+        <div class="card">Card Content</div>
+      </div>
+      
+      <div class="card-container">
+        <div class="card">Card Content</div>
+      </div>
+      
+      <div class="card-container">
+        <div class="card">Card Content</div>
+      </div> -->
+      
+      
+    </main>
+    <footer>FOOTER</footer>
+
+
+
+
+
+
+
+
+    <!--  <div class="range-container">
+      <h1 class="nadpis">Nadpis</h1>
+      <div class="row row1">
+          <div class="col-2"></div>
+          <div class="col-4">
+              <img id="pic1" src="../pictures/pokus1.jpg">
+         </div>
+         <div class="col-4">
+             <div id="infotext1"> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into e</p></div>
+            <a href='../html/trasa1.html'><button class="btn btn-outline-dark link1">Link</button></a>
+          </div>
+          <div class="col-2"></div>
+      </div>
+     <div class="row row1">
+        <div class="col-2"></div>
+        <div class="col-4">
+            <div id="infotext1"> <p>traset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClint</p></div>
+            <a href='../html/trasa2.html'><button class="btn btn-outline-dark link1">Link</button></a>
+        </div>
+        <div class="col-4">
+            <img id="pic2" src="../pictures/pokus1.jpg">
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+    <footer class="footer">
+            <p>nieco</p>
+    </footer> -->
+  </body>
+</html>

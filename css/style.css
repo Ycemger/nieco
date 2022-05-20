@@ -17,6 +17,9 @@
     padding-left: 50%;
     text-size-adjust: 10%;   
 }
+.container-fluid a:hover{
+    color:black;
+}
 .navbar-brand{
     font-size:30px;
     color: white;
