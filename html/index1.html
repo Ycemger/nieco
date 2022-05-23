@@ -35,9 +35,9 @@
         -->
         <ul id="menu">
           <a href="../html/index1.html"><li>Home</li></a>
-          <a href="#"><li>About</li></a>
-          <a href="#"><li>Info</li></a>
-          <a href="#"><li>Contact</li></a>
+          <a href="#Sed"><li>About routes</li></a>
+          <a href="#footer"><li>Info</li></a>
+          <a href="#footer"><li>Contact</li></a>
           <a href="#" target="_blank"><li>Show me more</li></a> 
         </ul>
       </div>
@@ -51,41 +51,83 @@
     <main>
       <header>
         <div class="left">
-        <h1>THIS IS THE WORLD WE LOVE</h1></div>
+        <h1>Cyklistika</h1></div>
         <div class="right"><img src="https://hemsedal.com/imager/images/Sommeraktivitet/Utend%C3%B8rs/Sykkel/2237/C94A5893_e7516ba00c88efaa24219bb445deb32e.jpg" alt="Old Technology"></div>
       </header>
-      
-      <div class="card-container">
-        <div class="card">
-          <div id="pohybobr" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#pohybobr" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#pohybobr" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#pohybobr" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+        <div class="card-container">
+          <div class="card">
+            <div class="slideshow-container" data-bs-interval="10000">
+              <div class="mySlides show" data-bs-interval="2000">
+                <div class="numbertext">1 / 3</div>
+                  <img class="obr1" src="https://upload.wikimedia.org/wikipedia/commons/c/c5/%C5%BDelezn%C3%A1_studienka_09.jpg" style="width:100%";>
+                  <p id="Sed" class="text1">Železná studnička
+                  </p> <br>
+                  <a href='../html/index1_trasa1.html' class="text1"><button class="btn btn-outline-dark link1">Link</button></a>
+              </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 3</div>
+                  <img class="obr1" src="https://goslovakia.sk/assets/media/images/places/gallery/2791_yjsl594cwx.jpg" style="width: 100%";>
+                  <!-- <div class="text">Caption Two</div> -->
+                  <p class="text1">Kamzík</p> <br> 
+                  <a href='../html/index1_trasa2.html' class="text1"><button class="btn btn-outline-dark link1">Link</button></a>
+                </div>
+
+                <div class="mySlides ">
+                  <div class="numbertext">3 / 3</div>
+                  <img class="obr1" src="https://www.archinfo.sk/image-handler/77946/994197/gallery/box_109606/orig_1/ITB%23ROZHLADNA%23_DSC0179.jpg" style="width:100% border-radius=1px";>
+                  <p class="text1">Devínska kobyla
+                  </p> <br>
+                  <a href='../html/index1_trasa3.html' class="text1"><button class="btn btn-outline-dark link1">Link</button></a>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://th.bing.com/th/id/OIP.8F1RrdkLKOOBd5qMxDvJkAHaE8?pid=ImgDet&rs=1" id="obr" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://th.bing.com/th/id/OIP.8F1RrdkLKOOBd5qMxDvJkAHaE8?pid=ImgDet&rs=1" id="obr" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://th.bing.com/th/id/OIP.8F1RrdkLKOOBd5qMxDvJkAHaE8?pid=ImgDet&rs=1" id="obr" class="d-block w-100" alt="...">
-                <p>nieco</p>
-              </div>
-            </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#pohybobr" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#pohybobr" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+                <br>
+
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+
+                <script>
+                  let slideIndex = 1;
+                  showSlides(slideIndex);
+
+                  function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                  }
+
+                  function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                  }
+
+                  function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                  }
+                </script>
           </div>
         </div>
-      </div>
+
+
+
+      
       
       <!-- <div class="card-container">
         <div class="card">Card Content</div>
@@ -101,7 +143,7 @@
       
       
     </main>
-    <footer>FOOTER</footer>
+    <footer id="footer">FOOTER</footer>
 
 
 
