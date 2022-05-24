@@ -35,7 +35,6 @@
     -webkit-text-stroke:1.5px black;
     color:transparent;
     letter-spacing:4px;
-    max-width:12ch;
     font-size: 70px;
   }
   
@@ -98,8 +97,8 @@
     text-stroke:1px hsl(0, 0%, 100%, 0.5);
     display:grid;
     place-items:center;
-    font-size:22rem;
-    text-align:center;
+    font: size 10px;
+    text-align:left;
     overflow:hidden;
   }
   
@@ -196,3 +195,40 @@
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
   }
+  #mapa{
+    margin-top: 10%;
+    margin-bottom: 20%;
+    
+}
+.row1{
+  margin-top: 5%;
+}
+#ZeleznaStudnicka{
+  justify-content: center;
+  display: flex;  
+}
+#obzels{
+  max-width: 100%;
+  max-height: 75%;
+  position: relative;
+  top: 10%;
+  margin-left: 15%;
+}
+#obrazokKamzik{
+  justify-content: center;
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-left: 7%;
+
+}
+#DevinskaKobyla{
+  justify-content: center;
+  display: flex;
+  padding-left: 10%;;
+}
+.kobyla{
+  padding-top: 15%;
+  width: 1200%;
+  height: 80%;
+}

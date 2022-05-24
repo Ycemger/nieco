@@ -149,4 +149,12 @@ body
 {
   transform: none;
 }
-
+.nadpis{
+  text-align: center;
+  padding-top: 5%;
+  font-size: 65px;
+  margin-bottom: 10% ;
+}
+.dropdown-menu{
+  background-color:#cdcdcd;
+}
