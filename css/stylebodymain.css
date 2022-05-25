@@ -36,7 +36,7 @@
     color:transparent;
     letter-spacing:4px;
     font-size: 70px;
-  }
+  } 
   
   .left {
     display: grid;
@@ -141,6 +141,7 @@
 
   .obr1{
     max-height: 500px;
+    border-radius:  0 3px 3px 0;
   }
   
   /* Position the "next button" to the right */
