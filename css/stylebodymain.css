@@ -199,7 +199,7 @@
   #mapa{
     margin-top: 10%;
     margin-bottom: 20%;
-    
+    border-radius: 3px;
 }
 .row1{
   margin-top: 5%;
@@ -214,6 +214,7 @@
   position: relative;
   top: 10%;
   margin-left: 15%;
+  border-radius: 3px;
 }
 #obrazokKamzik{
   justify-content: center;
@@ -221,7 +222,6 @@
   margin-top: 5%;
   margin-bottom: 5%;
   padding-left: 7%;
-
 }
 #DevinskaKobyla{
   justify-content: center;
@@ -232,4 +232,8 @@
   padding-top: 15%;
   width: 1200%;
   height: 80%;
+  border-radius: 3px;
+}
+#kamzik{
+  border-radius: 3px;
 }
